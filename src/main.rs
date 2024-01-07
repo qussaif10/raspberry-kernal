@@ -46,6 +46,7 @@ impl GPIO {
 
         // shift the mask to the right location
         let pinnum = pin % 10;
+        
         mask = mask << pinnum * 3;
 
         // and in the NOT of the mask
